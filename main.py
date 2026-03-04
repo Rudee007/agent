@@ -33,8 +33,10 @@ def main():
     )
 
     if args.verbose:
-        print(f"user input: {args.user_input}")
-        print(f"prompt tokens: {response}")
+        print(f"user input: {args.user_prompt}")
+        print(f"prompt tokens: {response.usage_metadata.prompt_token_count}")
+        print(f'response tokens: {response.usage_metadata.candidates_token_count}')
+
 
     print(response.text)
     
