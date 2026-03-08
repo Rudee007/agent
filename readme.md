@@ -16,7 +16,7 @@ cd <repository-name>
 To run the main application, execute:
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 ## Files
